@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   switch (method) {
     case 'GET':
       try {
-        const demos = await Demo.find({}) 
+        const demos = await Demo.find({})
         res.status(200).json({ success: true, data: demos })
       } catch (error) {
         res.status(400).json({ success: false })
