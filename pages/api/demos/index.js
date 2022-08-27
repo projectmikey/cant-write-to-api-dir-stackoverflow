@@ -1,7 +1,7 @@
 import dbConnect from '../../../lib/dbConnect'
 import Demo from '../../../models/Demo'
 import fs from 'fs'
-const shell = require('shelljs');
+import shell from "shelljs";
 
 export default async function handler(req, res) {
   const {
